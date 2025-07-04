@@ -1,8 +1,79 @@
-# React + Vite
+# プロジェクト名
+藤沢イベント情報局
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+藤沢市の地域イベント情報を集約し、交流促進を目指すWebアプリケーションです。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 特徴
+
+- 地域イベントの一覧表示と詳細閲覧
+- ボランティア・出店者向けの応募フォーム
+- 注目イベントのビジュアル表示（ヒーローセクション）
+- スマートフォン対応（レスポンシブデザイン）
+- ダークモード対応
+- データはダミー（`dummyEvents`）で構成
+
+---
+
+## 使用技術
+
+- フレームワーク: React（Vite 使用）
+- 言語: JavaScript（JSX）、CSS
+- その他: ダークモード対応、簡易アニメーション、アクセシビリティへの配慮
+
+---
+
+## 画面構成
+
+| 画面                 | 機能概要                                                         |
+|----------------------|------------------------------------------------------------------|
+| ホーム               | 注目イベントのスライド、直近イベントのカード表示               |
+| イベント一覧         | 全イベント表示、縦型リスト、ページネーション付き               |
+| イベント詳細         | 開催日・時間・場所・アクセス・説明文などを詳細に表示           |
+| お問い合わせ         | ボランティア応募、出店応募、その他意見送信の3つのフォームに分岐 |
+| ログイン（仮）       | 将来的な管理機能の拡張に備えたルーティング設定済み             |
+
+---
+
+## 今後の拡張予定
+
+- データベース連携
+- ログイン認証機能と管理画面の実装
+- 地図連携による会場の可視化
+- お知らせ機能・多言語対応
+
+## 動作確認方法
+
+このアプリケーションは Vite を使用して開発されています。以下の手順でローカル環境にて動作確認が可能です。
+
+### 前提条件
+
+- Node.js（バージョン18以上を推奨）
+- npm（Node.jsに同梱）
+
+### 手順
+
+```bash
+# リポジトリのクローン
+git clone https://github.com/KOKI-OKD36/my-react-app.git
+cd my-react-app
+
+# 依存パッケージのインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+### アクセス
+
+ブラウザで以下にアクセスしてください：
+
+http://localhost:5173/
+
+
+
+
+
+
+
